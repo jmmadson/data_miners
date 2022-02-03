@@ -17,15 +17,12 @@ TRNSFRM_ev_stations_v1
 	'CNG Total Compression Capacity', 'CNG Storage Capacity', 'LNG On-Site Renewable Source', 'E85 Other Ethanol Blends', 'EV Pricing (French)', 'LPG Nozzle Types', 
 	'Hydrogen Pressures', 'Hydrogen Standards', 'CNG Fill Type Code', 'CNG PSI', 'CNG Vehicle Class', 'LNG Vehicle Class', 'Restricted Access',
 	Removed column 'Country' as everthing was one value i.e. USA
-	*** More columns that can be removed. We will discuss those today in the class.
+	Removed the following columns after discussing with the team:
+	Station_Phone, Expected Date, Groups With Access Code, Cards Accepted, EV Network Web, Geocode Status, Date Last Confirmed, Updated At, Federal Agency ID, Federal Agency Name, 
+	EV_Connector_Type, Groups With Access Code (French), EV Other Info, Access Detail Code, Federal Agency Code, EV On-Site Renewable Source,
 
------------------------------------------------------------------------------------------------------------------
-Electric_Vehicle_Population_Data ( I don't know where I got this data from but I started working on it and then I relaized its not the EV station data) :)
-	Removed columns VIN as its consider PII data
-	Removed column Clean 'Alternative Fuel Vehicle (CAFV) Eligibility' have two values and not important for our question
-	Removed column 'Legislative District', values span from 1-49. not important for our model
-	Removed column 'DOL Vehicle ID'. Not sure what this column is presenting, random 7-9digit number
-	There are roughly 18,213 Plug-in Hybrid Electric Vehicle (PHEV) found. For our analysis we are not considering Hybrid models so removing these rows.
-	New data set has 44,048 rows
-	Let me know if we need column 'Electric Vehicle Type' it only has one value which is "Battery Electric Vehicle (BEV)"
 
+Data Cleanup:
+Drop P's from status code - 68 records dropped
+Charging_Cost column has three values ony Paid, Free, Blanks
+Need to perform a lookup on Zipcode, some 3 and 4 digit code exists
