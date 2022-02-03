@@ -1,0 +1,87 @@
+Final Project
+
+EV_STATIONS
+-
+Station_Name varchar pk
+Street_Address varchar
+City varchar
+State_Code varchar fk - EV_SALES_2019.State_Code
+Zip_Code int fk - ZIP_CODE_REFERENCE.Zip_Code 
+Status_Code varchar
+Access_Days_Time varchar	
+EV_Level1_EVSE_Num int	
+EV_Level2_EVSE_Num int	
+EV_DC_Fast_Count int
+EV_Network varchar
+Latitude int pk
+Longitude int pk 
+EV_ID int pk
+Owner_Type_Code varchar
+Open_Date date
+Access_Code varchar
+Facility_Type varchar
+Charging_Cost varchar
+
+
+EV_SALES_2019
+-
+State_Code varchar pk
+State_Name varchar
+EV_Sales_Count int 
+EV_Market_Share varchar
+
+ZIP_CODE_REFERENCE
+-
+Zip_Code int pk
+County_Name varchar
+State_Code varchar
+
+
+
+
+
+
+
+Departments
+-
+dept_no varchar pk
+dept_name varchar
+
+Dept_Emp
+-
+emp_no int pk fk - Employees.emp_no
+dept_no varchar pk fk - Departments.dept_no
+from_date
+to_date
+
+Salaries
+-
+emp_no int pk fk - Employees.emp_no
+salary varchar
+from_date date  
+to_date date
+
+Dept_Manager
+-
+dept_no varchar pk fk - Departments.dept_no
+emp_no int pk fk - Employees.emp_no 
+from_date date
+to_date date
+
+Titles
+-
+emp_no int pk fk - Employees.emp_no
+title varchar
+from_date date
+to_date date
+
+Employees
+-
+emp_no int pk
+birth_date date
+first_name varchar
+last_name varchar
+gender varchar
+hire_date date
+
+

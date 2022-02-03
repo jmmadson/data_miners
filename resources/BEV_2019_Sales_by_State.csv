@@ -1,4 +1,4 @@
-﻿STATE,State,2019 BEV Sales,2019 BEV Market Share
+﻿State_code,State_name,EV_Sales_count,EV_Market_share
 AL,Alabama,722,0.37%
 AK,Alaska,87,0.35%
 AZ,Arizona,"6,637",2.20%
