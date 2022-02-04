@@ -28,6 +28,20 @@ CREATE TABLE "EV_STATIONS" (
      )
 );
 
+CREATE TABLE "EV_REGISTRATION" (
+    "DMV_ID" int   NOT NULL,
+    "DMV_Snapshot_Date" varchar   NOT NULL,
+    "Zip_code" int   NOT NULL,
+    "VIN_Prefix" varchar   NOT NULL,
+    "Registration_Valid_Date" date   NOT NULL,
+    "EV_Make" varchar   NOT NULL,
+    "EV_Model" varchar   NOT NULL,
+    "EV_Model_Year" int   NOT NULL,
+    CONSTRAINT "pk_EV_REGISTRATION" PRIMARY KEY (
+        "Zip_code","VIN_Prefix"
+     )
+);
+
 CREATE TABLE "EV_SALES_2019" (
     "State_Code" varchar   NOT NULL,
     "State_Name" varchar   NOT NULL,
@@ -51,5 +65,8 @@ ALTER TABLE "EV_STATIONS" ADD CONSTRAINT "fk_EV_STATIONS_State_Code" FOREIGN KEY
 REFERENCES "EV_SALES_2019" ("State_Code");
 
 ALTER TABLE "EV_STATIONS" ADD CONSTRAINT "fk_EV_STATIONS_Zip_Code" FOREIGN KEY("Zip_Code")
+REFERENCES "ZIP_CODE_REFERENCE" ("Zip_Code");
+
+ALTER TABLE "EV_REGISTRATION" ADD CONSTRAINT "fk_EV_REGISTRATION_Zip_code" FOREIGN KEY("Zip_code")
 REFERENCES "ZIP_CODE_REFERENCE" ("Zip_Code");
 

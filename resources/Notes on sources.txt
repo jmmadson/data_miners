@@ -1,3 +1,7 @@
+wi_ev_registrations_public
+	Removed columns 'Registration Expiration Date'(empty) & 'VIN Model Year'(not related)
+	NOTE: Other states don't have the same years of data. Might need to filter the data
+
 ZIP_COUNTY_FIPS_201706
 	Removed columns STCOUNTYFP and CLASSFP from ZIP_COUNTY_FIPS_201706
 
