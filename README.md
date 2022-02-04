@@ -1,16 +1,24 @@
-# Electric Vehicle Charging | Growing Adoption Through Infrastructure
+
+
+
+# ![](images/plug.png)   Electric Vehicles: <br> Growing Adoption Through Infrastructure 
 </hr>
+</hr>
+
  
 ### <Strong>Project Team: Data Miners</strong>
 <ul>
-<li><a href=mailto:"fahadarehman@gmail.com">Fahad Rehman</a></li>
-<li><a href=mailto:"clavallee2@gmail.com">Collin Lavallee</a></li>
-<li><a href=mailto:"john.okimosh@gmail.com">John Okimosh</a></li>
-<li><a href=mailto:"jmmadson@gmail.com">Jenni Madson</a></li>
+    <li><a href=mailto:"fahadarehman@gmail.com">Fahad Rehman</a></li>
+    <li><a href=mailto:"clavallee2@gmail.com">Collin Lavallee</a></li>
+    <li><a href=mailto:"john.okimosh@gmail.com">John Okimosh</a></li>
+    <li><a href=mailto:"jmmadson@gmail.com">Jenni Madson</a></li>
 </ul>
 </br>
- 
+
+
+------------- 
 ## Overview
+-------------
 This repository is our final project for the UW Extension - Data Analytics BootCamp. For this project, we have chosen to focus on a topic that could have a positive impact on the current climate crisis: Electric Vehicle Adoption.
  
 Electric Vehicles require a certain amount of infrastructure to make them a viable means of transportation for consumers. While many factors go into the purchase of an electric vehicle, we feel there is a strong correlation between the number of charging stations available and the number of electric vehicles sold in those areas. That is the basis of our hypothesis for this analysis.
@@ -19,20 +27,33 @@ We're going to use our data sets and machine learning models to confirm our hypo
  
 </br>
  
+------------- 
 ## Questions:
+-------------
 Through our modeling and analysis we are planning to solve the following questions:
 <ul>
-<li>Does the number of and location of charging stations affect the number of electric vehicles sold in those locations? </li>
-<li>How many charging stations in a location help drive sales and what locations could add more to increase adoption?</li>
-<li>What other factors affect the sales of electric vehicles?</li>
+    <li>Does the number of and location of charging stations affect the number of electric vehicles sold in those locations? </li>
+    <li>How many charging stations in a location help drive sales and what locations could add more to increase adoption?</li>
+    <li>What other factors affect the sales of electric vehicles?</li>
 </ul>
- 
- 
+ </br>
+
+------------- 
 ## Data Sets:
+-------------
 The following are the data sets we plan to utilize for the project at this stage. This may change after further data review & manipulation:
- 
- 
+<ol>
+    <li>Electric Vehicle Charging Stations (ADD LINK)</li>
+    <li>Electric Vehicle Sales by Zip (ADD LINK)</li>
+    <li>Median Income (ADD LINK)</li>
+    <li>Fuel Prices (ADD LINK)</li>
+    <li>Weather (ADD LINK)</li>
+</ol>
+ </br>
+
+------------- 
 ## Technology
+-------------
 The following are the technologies we plan to utilize for the project at this stage:
  
 |  Technology | Version  |  Application |
@@ -42,9 +63,19 @@ The following are the technologies we plan to utilize for the project at this st
 |  Sample | 7.0  | What we're using it for  |
 |  Sample | V13  |  What we're using it for |
  
- 
+ </br>
+
+-------------
 ## Machine Learning Algorithm
+ -------------
+ We are planning to use XX model w/ XX to do X. 
+
  
- 
+</br>
+
+-------------
 ## Database Structure
-We've done some initial planning for the structure of our database. You will find our ERD, Schema
+-------------
+
+We've done some initial planning for the structure of our database. 
+Checkout our <a href="https://github.com/jmmadson/data_miners/tree/main/database_related">Database planning documentation</a>.
