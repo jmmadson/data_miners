@@ -17,7 +17,7 @@
 
 
 ------------- 
-## Overview
+## Overview:
 -------------
 This repository is our final project for the UW Extension - Data Analytics BootCamp. For this project, we have chosen to focus on a topic that could have a positive impact on the current climate crisis: Electric Vehicle Adoption.
  
@@ -52,7 +52,7 @@ The following are the data sets we plan to utilize for the project at this stage
  </br>
 
 ------------- 
-## Technology
+## Technology:
 -------------
 The following are the technologies we plan to utilize for the project at this stage:
  
@@ -66,7 +66,7 @@ The following are the technologies we plan to utilize for the project at this st
  </br>
 
 -------------
-## Machine Learning Algorithm
+## Machine Learning Algorithm:
  -------------
  We are planning to use XX model w/ XX to do X. 
 
@@ -74,7 +74,7 @@ The following are the technologies we plan to utilize for the project at this st
 </br>
 
 -------------
-## Database Structure
+## Database Structure:
 -------------
 
 We've done some initial planning for the structure of our database. 
