@@ -47,7 +47,7 @@ The following are the data sets we plan to utilize for the project at this stage
     <li>Electric Vehicle Sales by Zip (ADD LINK)</li>
     <li>Median Income (ADD LINK)</li>
     <li>Fuel Prices (ADD LINK)</li>
-    <li>Weather (ADD LINK)</li>
+    <li>Political Affiliation(ADD LINK)</li>
 </ol>
  </br>
 
