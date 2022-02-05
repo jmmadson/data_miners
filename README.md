@@ -1,5 +1,3 @@
-
-
 # ![](images/plug.png)   Electric Vehicles: <br> Growing Adoption Through Infrastructure 
 </hr>
 </hr>
