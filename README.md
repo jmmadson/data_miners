@@ -38,18 +38,6 @@ Through our modeling and analysis we are planning to solve the following questio
 </ul>
  </br>
 
-------------- 
-## Data Sets:
--------------
-The following are the data sets we plan to utilize for the project at this stage. This may change after further data review & manipulation:
-<ol>
-    <li>Electric Vehicle Charging Stations (ADD LINK)</li>
-    <li>Electric Vehicle Sales by Zip (ADD LINK)</li>
-    <li>Median Income (ADD LINK)</li>
-    <li>Fuel Prices (ADD LINK)</li>
-    <li>Political Affiliation(ADD LINK)</li>
-</ol>
- </br>
 
 ------------- 
 ## Technology:
@@ -66,6 +54,8 @@ The following are the technologies we plan to utilize for the project at this st
 |  Tableau | V13  |  Dashboard |
 |  Plotly | V13  |  Data Analysis & Visualization |
 |  CSV Files | V13  |  Datasets |
+|  Google Collab | V13  |  Datasets |
+|  Quick Database Diagrams | V13  | We are using this application to create ERDs |
 
 
 While the technologies we use may change as we work throught this project, we will start with some of those we are most familiar with.   We will then explore them more in depth to determine if they are right for the project as well as to increase the effectiveness of our analysis and visualization. 
@@ -81,8 +71,56 @@ While the technologies we use may change as we work throught this project, we wi
 </br>
 
 -------------
+## Data Sets:
+-------------
+
+The following are the data sets we plan to utilize for the project at this stage. This may change after further data review & manipulation:
+
+- **Electric Vehicle Charging Stations**
+
+  - Link: **https://www.kaggle.com/prasertk/electric-vehicle-charging-stations-in-usa**
+
+  - Description: The dataset contains EV Charging station information(Name, City, Zip, Latitude, Longitude etc.). Additional features we will be using from this dataset are: Charging cost, Owner Type, Facility Type, Facility Time etc.
+
+    ![](\images\EV_Charging_Stations.PNG)
+
+- **Electric Vehicle Registration** 
+
+  - Link: **https://www.atlasevhub.com/materials/state-ev-registration-data**
+
+  - Description: The dataset contains EV registration data by state with additional EV attribution(Make, Model, Year etc.)
+
+    <img src="\images\EV_Registration_by_state.PNG" style="zoom:60%;" />
+
+- **Electric Vehicle Sales by State**
+
+  - Link: **https://evadoption.com/ev-market-share/ev-market-share-state**
+
+  - Description: The dataset contains EV Sales count by State and the EV Market Share
+
+    <img src="\images\EV_Sales_by_state.PNG" style="zoom:60%;" />
+
+- **ZIP CODE Master Data**
+
+  - Link: **https://www.kaggle.com/danofer/zipcodes-county-fips-crosswalk**
+
+  - Description: Master data on zip code for zip code validation against the above three sources
+
+    <img src="\images\Zip_Code_Master.PNG" style="zoom:60%;" />
+
+Based on time and availability we might look into bringing additional data sources in our model(aspirational future model):
+
+- Median Income 
+- Fuel Prices
+- Political Affiliation
+
+
+-------------
 ## Database Structure:
 -------------
 
 We've done some initial planning for the structure of our database. 
-Checkout our <a href="https://github.com/jmmadson/data_miners/tree/main/database_related">Database planning documentation</a>.
+
+- [Link to ERD (Entity Relation Diagram)](https://github.com/jmmadson/data_miners/blob/main/database_related/ERD.png) 
+- [Link to PGADMIN SQL File](https://github.com/jmmadson/data_miners/blob/main/database_related/pgadmin_import.sql)
+- [Additional documentation](https://github.com/jmmadson/data_miners/tree/main/database_related)
