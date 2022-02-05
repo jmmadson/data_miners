@@ -58,11 +58,18 @@ The following are the technologies we plan to utilize for the project at this st
  
 |  Technology | Version  |  Application |
 |---|---|---|
-|  PostGres |  14 | Database Management  |
-|  Sample | V2.4  |  What we're using it for |
-|  Sample | 7.0  | What we're using it for  |
-|  Sample | V13  |  What we're using it for |
- 
+|  pgAdmin & PostGres |  14 | Database Management  |
+|  scikit-learn (LinearRegression, e.g.) | V13  |  Machine Learning |
+|  Amazon Web Services | V13  |  Connecting the Database to Machine Learning |
+|  Pandas | V2.4  |  Data Cleaning, Transformation, & Analysis |
+|  Python | 7.0  | Data Cleaning, Transformation, & Analysis  |
+|  Tableau | V13  |  Dashboard |
+|  Plotly | V13  |  Data Analysis & Visualization |
+|  CSV Files | V13  |  Datasets |
+
+
+While the technologies we use may change as we work throught this project, we will start with some of those we are most familiar with.   We will then explore them more in depth to determine if they are right for the project as well as to increase the effectiveness of our analysis and visualization. 
+
  </br>
 
 -------------
