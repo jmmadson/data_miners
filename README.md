@@ -2,7 +2,7 @@
 </hr>
 </hr>
 
- 
+
 ### <Strong>Project Team: Data Miners</strong>
 <ul>
     <li><a href=mailto:"fahadarehman@gmail.com">Fahad Rehman</a></li>
@@ -13,34 +13,36 @@
 </br>
 
 
-------------- 
+-------------
 ## Overview:
 -------------
 This repository is our final project for the UW Extension - Data Analytics BootCamp. For this project, we have chosen to focus on a topic that could have a positive impact on the current climate crisis: Electric Vehicle Adoption.
- 
+
 Electric Vehicles require a certain amount of infrastructure to make them a viable means of transportation for consumers. While many factors go into the purchase of an electric vehicle, we feel there is a strong correlation between the number of charging stations available and the number of electric vehicles sold in those areas. That is the basis of our hypothesis for this analysis.
- 
+
 We're going to use our data sets and machine learning models to confirm our hypothesis as well as help predict where additional charging stations could be placed to increase sales. We also plan to examine additional factors that may contribute to the purchase of electric sales decreasing the negative impact of fossil fuel vehicles on the environment.
- 
+
 </br>
- 
-------------- 
+
+-------------
 ## Questions:
 -------------
 Through our modeling and analysis we are planning to solve the following questions:
 <ul>
-    <li>Does the number of and location of charging stations affect the number of electric vehicles sold in those locations? </li>
+    <li>Can</li>
     <li>How many charging stations in a location help drive sales and what locations could add more to increase adoption?</li>
     <li>What other factors affect the sales of electric vehicles?</li>
+  	<li>Can we predict the next location (zip code) to install a EV charger?</li>
 </ul>
+
  </br>
 
 
-------------- 
+-------------
 ## Technology:
 -------------
 The following are the technologies we plan to utilize for the project at this stage:
- 
+
 |  Technology | Version  |  Application |
 |---|---|---|
 |  pgAdmin & PostGres |  14 | Database Management  |
@@ -61,10 +63,40 @@ While the technologies we use may change as we work throught this project, we wi
 
 -------------
 ## Machine Learning Algorithm:
- -------------
- We are planning to use XX model w/ XX to do X. 
+-------------
+Supervised Learning will be used
 
- 
+Support Vector Machine will be used.
+
+​	Alternative: Decision Tree Model
+
+Zip Code samples used to determine one of two categories. 1 = EV Station Built, 0 = EV Station Not Built
+
+​	Current version of model: A zip code with a quantity greater than 0 will be classified by 1.
+
+Data Sets used:
+
+​	EV Charging Stations
+
+​	New York Station EV Registration by Zip Code
+
+​	New York State Zip code List
+
+Model will be trained on New York State data to predict where to build a new EV Charging Station.
+
+Wisconsin EV Registration data will be input into the model to predict zip codes in Wisconsin to install EV charging stations.
+
+Potential features to be added:
+
+​	Median Income by Zip Code
+
+​	Average Climate by Zip Code
+
+​	Average Fuel Prices by Zip Code
+
+​	Controlling Political Party by Zip Code
+
+
 </br>
 
 -------------
