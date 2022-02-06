@@ -41,21 +41,21 @@ Through our modeling and analysis we are planning to solve the following questio
 -------------
 The following are the technologies we plan to utilize for the project at this stage:
  
-|  Technology | Version  |  Application |
-|---|---|---|
-|  pgAdmin & PostGres |  14 | Database Management  |
-|  scikit-learn (LinearRegression, e.g.) | V13  |  Machine Learning |
-|  Amazon Web Services | V13  |  Connecting the Database to Machine Learning |
-|  Pandas | V2.4  |  Data Cleaning, Transformation, & Analysis |
-|  Python | 7.0  | Data Cleaning, Transformation, & Analysis  |
-|  Tableau | V13  |  Dashboard |
-|  Plotly | V13  |  Data Analysis & Visualization |
-|  CSV Files | V13  |  Datasets |
-|  Google Collab | V13  |  Datasets |
-|  Quick Database Diagrams | V13  | We are using this application to create ERDs |
+|  Technology | Application |
+|---|---|
+|  pgAdmin & PostGres | Database Management  |
+|  scikit-learn (LinearRegression, e.g.)|  Machine Learning |
+|  Amazon Web Services | Connecting the Database to Machine Learning |
+|  Pandas | Data Cleaning, Transformation, & Analysis |
+|  Python | Data Cleaning, Transformation, & Analysis  |
+|  Tableau | Dashboard |
+|  Plotly | Data Analysis & Visualization |
+|  CSV Files | Datasets |
+|  Google Collab | Writing & executing our machine learning code|
+|  Quick Database Diagrams | ERD creation |
 
 
-While the technologies we use may change as we work throught this project, we will start with some of those we are most familiar with.   We will then explore them more in depth to determine if they are right for the project as well as to increase the effectiveness of our analysis and visualization. 
+While the technologies we use may change as we work through this project, we will start with some of those we are most familiar with.   We will then explore them more in depth to determine if they are right for the project as well as to increase the effectiveness of our analysis and visualization. 
 
  </br>
 
@@ -79,7 +79,7 @@ The following are the data sets we plan to utilize for the project at this stage
 
   - Description: The dataset contains EV Charging station information(Name, City, Zip, Latitude, Longitude etc.). Additional features we will be using from this dataset are: Charging cost, Owner Type, Facility Type, Facility Time etc.
 
-    ![](\images\EV_Charging_Stations.PNG)
+    ![](images\EV_Charging_Stations.PNG)
 
 - **Electric Vehicle Registration** 
 
@@ -87,7 +87,7 @@ The following are the data sets we plan to utilize for the project at this stage
 
   - Description: The dataset contains EV registration data by state with additional EV attribution(Make, Model, Year etc.)
 
-    <img src="\images\EV_Registration_by_state.PNG" style="zoom:60%;" />
+    <img src="images\EV_Registration_by_state.PNG" style="zoom:60%;" />
 
 - **Electric Vehicle Sales by State**
 
@@ -95,7 +95,7 @@ The following are the data sets we plan to utilize for the project at this stage
 
   - Description: The dataset contains EV Sales count by State and the EV Market Share
 
-    <img src="\images\EV_Sales_by_state.PNG" style="zoom:60%;" />
+    <img src="images\EV_Sales_by_state.PNG" style="zoom:60%;" />
 
 - **ZIP CODE Master Data**
 
@@ -103,7 +103,7 @@ The following are the data sets we plan to utilize for the project at this stage
 
   - Description: Master data on zip code for zip code validation against the above three sources
 
-    <img src="\images\Zip_Code_Master.PNG" style="zoom:60%;" />
+    <img src="images\Zip_Code_Master.PNG" style="zoom:60%;" />
 
 Based on time and availability we might look into bringing additional data sources in our model(aspirational future model):
 
@@ -118,6 +118,6 @@ Based on time and availability we might look into bringing additional data sourc
 
 We've done some initial planning for the structure of our database. 
 
-- [Link to ERD (Entity Relation Diagram)](https://github.com/jmmadson/data_miners/blob/main/database_related/ERD.png) 
-- [Link to PGADMIN SQL File](https://github.com/jmmadson/data_miners/blob/main/database_related/pgadmin_import.sql)
-- [Additional documentation](https://github.com/jmmadson/data_miners/tree/main/database_related)
+- [Entity Relation Diagram](https://github.com/jmmadson/data_miners/blob/main/database_related/ERD.png) 
+- [PGADMIN SQL File](https://github.com/jmmadson/data_miners/blob/main/database_related/pgadmin_import.sql)
+- [Additional Documentation](https://github.com/jmmadson/data_miners/tree/main/database_related)
