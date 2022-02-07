@@ -42,62 +42,71 @@ Through our modeling and analysis we are planning to solve the following questio
 ## Technology:
 -------------
 The following are the technologies we plan to utilize for the project at this stage:
+ 
+|  Technology | Application |
+|---|---|
+|  pgAdmin & PostGres | Database Management  |
+|  scikit-learn (LinearRegression, e.g.)|  Machine Learning |
+|  Amazon Web Services | Connecting the Database to Machine Learning |
+|  Pandas | Data Cleaning, Transformation, & Analysis |
+|  Python | Data Cleaning, Transformation, & Analysis  |
+|  Tableau | Dashboard |
+|  Plotly | Data Analysis & Visualization |
+|  CSV Files | Datasets |
+|  Google Collab | Writing & executing our machine learning code|
+|  Quick Database Diagrams | ERD creation |
 
-|  Technology | Version  |  Application |
-|---|---|---|
-|  pgAdmin & PostGres |  14 | Database Management  |
-|  scikit-learn (LinearRegression, e.g.) | V13  |  Machine Learning |
-|  Amazon Web Services | V13  |  Connecting the Database to Machine Learning |
-|  Pandas | V2.4  |  Data Cleaning, Transformation, & Analysis |
-|  Python | 7.0  | Data Cleaning, Transformation, & Analysis  |
-|  Tableau | V13  |  Dashboard |
-|  Plotly | V13  |  Data Analysis & Visualization |
-|  CSV Files | V13  |  Datasets |
-|  Google Collab | V13  |  Datasets |
-|  Quick Database Diagrams | V13  | We are using this application to create ERDs |
 
-
-While the technologies we use may change as we work throught this project, we will start with some of those we are most familiar with.   We will then explore them more in depth to determine if they are right for the project as well as to increase the effectiveness of our analysis and visualization. 
+While the technologies we use may change as we work through this project, we will start with some of those we are most familiar with.   We will then explore them more in depth to determine if they are right for the project as well as to increase the effectiveness of our analysis and visualization. 
 
  </br>
 
 -------------
 ## Machine Learning Algorithm:
 -------------
-Supervised Learning will be used
 
-Support Vector Machine will be used.
+### Models 
+The following lays out our current plan for the Machine Learning Model 
+<ul>
+  <li>Supervised Learning will be used.</li>
+  <li>Support Vector Machine will be used.</li>
+  <li>​Alternative: Decision Tree Model</li>
+</ul>
 
-​	Alternative: Decision Tree Model
 
-Zip Code samples used to determine one of two categories. 1 = EV Station Built, 0 = EV Station Not Built
+Zip Code samples will be used to determine one of two categories.
+</br>1 = EV Station Built, 0 = EV Station Not Built
 
-​	Current version of model: A zip code with a quantity greater than 0 will be classified by 1.
-
-Data Sets used:
-
-​	EV Charging Stations
-
-​	New York Station EV Registration by Zip Code
-
-​	New York State Zip code List
-
-Model will be trained on New York State data to predict where to build a new EV Charging Station.
-
-Wisconsin EV Registration data will be input into the model to predict zip codes in Wisconsin to install EV charging stations.
-
-Potential features to be added:
-
-​	Median Income by Zip Code
-
-​	Average Climate by Zip Code
-
-​	Average Fuel Prices by Zip Code
-
-​	Controlling Political Party by Zip Code
-
+The current version of model: </br>
+A zip code with a quantity greater than 0 will be classified by 1.
 
 </br>
+
+### Training Data Sets:
+
+<ul>
+  <li>EV Charging Stations</li>
+  <li>​New York Station EV Registration by Zip Code</li>
+  <li>New York State Zip code List</li>
+</ul>
+</br>
+
+Our Model will be trained on New York State data to predict where to build a new EV Charging Station.
+From there, Wisconsin EV Registration data will be input into the model to predict zip codes in Wisconsin to install EV charging stations.
+
+</br>
+
+### Potential features to be added:
+Based on time and availability we might look into bringing additional data sources in our model (aspirational future model):
+<ul>
+  <li>Median Income by Zip Code</li>
+  <li>Average Climate by Zip Code</li>
+  <li>Controlling Political Party by Zip Code</li>
+  <li>Average Fuel Price by Zip Code</li>
+</ul>
+
+</br>
+
 
 -------------
 ## Data Sets:
@@ -111,7 +120,7 @@ The following are the data sets we plan to utilize for the project at this stage
 
   - Description: The dataset contains EV Charging station information(Name, City, Zip, Latitude, Longitude etc.). Additional features we will be using from this dataset are: Charging cost, Owner Type, Facility Type, Facility Time etc.
 
-    ![](\images\EV_Charging_Stations.PNG)
+    ![](images\EV_Charging_Stations.PNG)
 
 - **Electric Vehicle Registration** 
 
@@ -119,7 +128,7 @@ The following are the data sets we plan to utilize for the project at this stage
 
   - Description: The dataset contains EV registration data by state with additional EV attribution(Make, Model, Year etc.)
 
-    <img src="\images\EV_Registration_by_state.PNG" style="zoom:60%;" />
+    <img src="images\EV_Registration_by_state.PNG" style="zoom:60%;" />
 
 - **Electric Vehicle Sales by State**
 
@@ -127,7 +136,7 @@ The following are the data sets we plan to utilize for the project at this stage
 
   - Description: The dataset contains EV Sales count by State and the EV Market Share
 
-    <img src="\images\EV_Sales_by_state.PNG" style="zoom:60%;" />
+    <img src="images\EV_Sales_by_state.PNG" style="zoom:60%;" />
 
 - **ZIP CODE Master Data**
 
@@ -135,13 +144,9 @@ The following are the data sets we plan to utilize for the project at this stage
 
   - Description: Master data on zip code for zip code validation against the above three sources
 
-    <img src="\images\Zip_Code_Master.PNG" style="zoom:60%;" />
+    <img src="images\Zip_Code_Master.PNG" style="zoom:60%;" />
 
-Based on time and availability we might look into bringing additional data sources in our model(aspirational future model):
 
-- Median Income 
-- Fuel Prices
-- Political Affiliation
 
 
 -------------
@@ -150,6 +155,6 @@ Based on time and availability we might look into bringing additional data sourc
 
 We've done some initial planning for the structure of our database. 
 
-- [Link to ERD (Entity Relation Diagram)](https://github.com/jmmadson/data_miners/blob/main/database_related/ERD.png) 
-- [Link to PGADMIN SQL File](https://github.com/jmmadson/data_miners/blob/main/database_related/pgadmin_import.sql)
-- [Additional documentation](https://github.com/jmmadson/data_miners/tree/main/database_related)
+- [Entity Relation Diagram](https://github.com/jmmadson/data_miners/blob/main/database_related/ERD.png) 
+- [PGADMIN SQL File](https://github.com/jmmadson/data_miners/blob/main/database_related/pgadmin_import.sql)
+- [Additional Documentation](https://github.com/jmmadson/data_miners/tree/main/database_related)
