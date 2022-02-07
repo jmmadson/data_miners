@@ -20,7 +20,7 @@ This repository is our final project for the UW Extension - Data Analytics BootC
 
 Electric Vehicles require a certain amount of infrastructure to make them a viable means of transportation for consumers. While many factors go into the purchase of an electric vehicle, we feel there is a strong correlation between the number of charging stations available and the number of electric vehicles sold in those areas. That is the basis of our hypothesis for this analysis.
 
-We're going to use our data sets and machine learning models to confirm our hypothesis as well as help predict where additional charging stations could be placed to increase sales. We also plan to examine additional factors that may contribute to the purchase of electric sales decreasing the negative impact of fossil fuel vehicles on the environment.
+We're going to use our data sets and machine learning models to confirm or reject our hypothesis as well as help predict where additional charging stations could be placed to increase sales. We also plan to examine additional factors that may contribute to the purchase of electric sales decreasing the negative impact of fossil fuel vehicles on the environment.
 
 </br>
 
@@ -29,7 +29,6 @@ We're going to use our data sets and machine learning models to confirm our hypo
 -------------
 Through our modeling and analysis we are planning to solve the following questions:
 <ul>
-    <li>Can</li>
     <li>How many charging stations in a location help drive sales and what locations could add more to increase adoption?</li>
     <li>What other factors affect the sales of electric vehicles?</li>
   	<li>Can we predict the next location (zip code) to install a EV charger?</li>
@@ -68,8 +67,8 @@ While the technologies we use may change as we work through this project, we wil
 ### Models 
 The following lays out our current plan for the Machine Learning Model 
 <ul>
-  <li>Supervised Learning will be used.</li>
-  <li>Support Vector Machine will be used.</li>
+  <li>Supervised Learning will be used</li>
+  <li>Support Vector Machine will be used</li>
   <li>​Alternative: Decision Tree Model</li>
 </ul>
 
@@ -80,7 +79,7 @@ Zip Code samples will be used to determine one of two categories.
 The current version of model: </br>
 A zip code with a quantity greater than 0 will be classified by 1.
 
-</br>
+
 
 ### Training Data Sets:
 
@@ -89,12 +88,11 @@ A zip code with a quantity greater than 0 will be classified by 1.
   <li>​New York Station EV Registration by Zip Code</li>
   <li>New York State Zip code List</li>
 </ul>
-</br>
+
 
 Our Model will be trained on New York State data to predict where to build a new EV Charging Station.
 From there, Wisconsin EV Registration data will be input into the model to predict zip codes in Wisconsin to install EV charging stations.
 
-</br>
 
 ### Potential features to be added:
 Based on time and availability we might look into bringing additional data sources in our model (aspirational future model):
