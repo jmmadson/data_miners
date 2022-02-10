@@ -52,6 +52,7 @@ The following are the technologies we plan to utilize for the project at this st
 |  Tableau | Dashboard |
 |  Plotly | Data Analysis & Visualization |
 |  CSV Files | Datasets |
+|  Jupyter Notebook | Writing & executing our Python code|
 |  Google Collab | Writing & executing our machine learning code|
 |  Quick Database Diagrams | ERD creation |
 
