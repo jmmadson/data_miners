@@ -41,7 +41,6 @@ Through our modeling and analysis we are planning to solve the following questio
 ## Technology:
 -------------
 The following are the technologies we plan to utilize for the project at this stage:
- 
 |  Technology | Application |
 |---|---|
 |  pgAdmin & PostGres | Database Management  |
@@ -50,7 +49,7 @@ The following are the technologies we plan to utilize for the project at this st
 |  Pandas | Data Cleaning, Transformation, & Analysis |
 |  Python | Data Cleaning, Transformation, & Analysis  |
 |  Tableau | Dashboard |
-|  Plotly | Data Analysis & Visualization |
+|  SQL Alchemy | Data Analysis thru Python |
 |  CSV Files | Datasets |
 |  Jupyter Notebook | Writing & executing our Python code|
 |  Google Collab | Writing & executing our machine learning code|
@@ -119,7 +118,7 @@ The following are the data sets we plan to utilize for the project at this stage
 
   - Description: The dataset contains EV Charging station information(Name, City, Zip, Latitude, Longitude etc.). Additional features we will be using from this dataset are: Charging cost, Owner Type, Facility Type, Facility Time etc.
 
-    ![](images\EV_Charging_Stations.PNG)
+    <img src="images\EV_Charging_Stations.PNG" style="zoom:60%;" />
 
 - **Electric Vehicle Registration** 
 
@@ -136,6 +135,16 @@ The following are the data sets we plan to utilize for the project at this stage
   - Description: The dataset contains EV Sales count by State and the EV Market Share
 
     <img src="images\EV_Sales_by_state.PNG" style="zoom:60%;" />
+
+- **Census Median Income**
+
+  - Link: **JENNY TO UPDATE**
+
+  - Description: JENNY TO UPDATE
+
+    <img src="\images\Census_Median_Income.PNG" style="zoom:60%;" />
+
+  - 
 
 - **ZIP CODE Master Data**
 

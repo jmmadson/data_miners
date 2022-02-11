@@ -1,0 +1,7 @@
+-- Shows where zip_code is less than 5 digits which means data needs to be either ignored or fixed
+SELECT count(*) FROM public.ev_stations
+where char_length(zip_code) < 5;
+
+-- shows how many state files we have loaded and their respective counts
+SELECT state_code, count(*) FROM public.ev_registration
+group by 1;
