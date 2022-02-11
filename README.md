@@ -41,7 +41,6 @@ Through our modeling and analysis we are planning to solve the following questio
 ## Technology:
 -------------
 The following are the technologies we plan to utilize for the project at this stage:
-
 |  Technology | Application |
 |---|---|
 |  pgAdmin & PostGres | Database Management  |
@@ -50,7 +49,7 @@ The following are the technologies we plan to utilize for the project at this st
 |  Pandas | Data Cleaning, Transformation, & Analysis |
 |  Python | Data Cleaning, Transformation, & Analysis  |
 |  Tableau | Dashboard |
-| SQL Alchemy | Data Analysis thru Python |
+|  SQL Alchemy | Data Analysis thru Python |
 |  CSV Files | Datasets |
 |  Jupyter Notebook | Writing & executing our Python code|
 |  Google Collab | Writing & executing our machine learning code|
