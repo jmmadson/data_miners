@@ -1,4 +1,4 @@
-﻿DMV_ID,DMV_Snapshot_Date,Zip_code,VIN_Prefix,Registration_Valid_Date,State,EV_Make_Model
+﻿DMV_ID,DMV_Snapshot_Date,Zip_code,VIN_Prefix,Registration_Valid_Date,State_Code,EV_Make_Model
 1,DMV Direct (6/30/2018),30348,1FADP5FU,6/30/2018,WI,Ford C-Max Energi
 1,DMV Direct (6/30/2018),48126,1FADP5FU,6/30/2018,WI,Ford C-Max Energi
 1,DMV Direct (6/30/2018),52101,1FADP5FU,6/30/2018,WI,Ford C-Max Energi
