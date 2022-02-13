@@ -138,11 +138,11 @@ The following are the data sets we plan to utilize for the project at this stage
 
 - **Census Median Income**
 
-  - Link: **JENNY TO UPDATE**
+  - Link: **https://github.com/jmmadson/data_miners/blob/main/resources/medianIncome.csv**
 
-  - Description: JENNY TO UPDATE
+  - Description: This data set contains 2019 Census Median Income data by Zip Code.
 
-    <img src="\images\Census_Median_Income.PNG" style="zoom:60%;" />
+    <img src="images\Census_Median_Income.PNG" style="zoom:60%;" />
 
   - 
 
