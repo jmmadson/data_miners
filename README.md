@@ -12,6 +12,15 @@
 </ul>
 </br>
 
+-------------
+## Deliverables:
+-------------
+
+[Final Project Presentation Slides](https://docs.google.com/presentation/d/14Eq1qvtn5LfKm8ZZqlp7LCTWsukR1nGEvLfNuLsjIQs/edit?usp=sharing)
+
+[Final Project Dashboard Storyboard](https://docs.google.com/presentation/d/1Qia_KQZcDebXRpabq48SAZv1Zmk2K6Zg8QCuIoLd_CE/edit?usp=sharing")
+
+</br>
 
 -------------
 ## Overview:
