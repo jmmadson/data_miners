@@ -5,3 +5,23 @@ where char_length(zip_code) < 5;
 -- shows how many state files we have loaded and their respective counts
 SELECT state_code, count(*) FROM public.ev_registration
 group by 1;
+
+
+
+
+SELECT distinct(ev_stations.zip_code) as ev_station_zip_code, zip_code_reference.zip_code, zip_code_reference.county_code
+into zip_code_new_1
+from ev_stations
+inner join zip_code_reference
+on ev_stations.zip_code = zip_code_reference.zip_code;
+
+
+SELECT ev_stations.zip_code as ev_station_zip_code, zip_code_reference.zip_code, zip_code_reference.county_code
+from ev_stations
+left join zip_code_reference
+on ev_stations.zip_code = zip_code_reference.zip_code;
+
+
+
+
+Extract Data (Various sources) --> Running Pandas Profiler  --> Python Transformation(Jenny's script)  --> Load csv files into PGADMIN  --> Use SQL ALCHEMY to run some SQL's  --> AI/ML
