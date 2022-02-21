@@ -73,42 +73,106 @@ While the technologies we use may change as we work through this project, we wil
 ## Machine Learning Algorithm:
 -------------
 
-### Models 
-The following lays out our current plan for the Machine Learning Model 
+### Model 
+
+The goal of the model is to analyze the relationship of EV registration counts, the dependent variable, with the independent variables of the remaining features.
+
 <ul>
-  <li>Supervised Learning will be used</li>
-  <li>Support Vector Machine will be used</li>
-  <li>​Alternative: Decision Tree Model</li>
+  <li>Supervised Learning was selected based on the labeled dated present in the data sets.</li>
+  <li>NOT as classification problem</li>
+  <li>Regression analysis selected to predict target data</li>
+  <li>Sklearn LinearRegression selected for linear relationships present in the data</li>
 </ul>
 
 
-Zip Code samples will be used to determine one of two categories.
-</br>1 = EV Station Built, 0 = EV Station Not Built
 
-The current version of model: </br>
-A zip code with a quantity greater than 0 will be classified by 1.
+Using pd.corr( ) a correlation matrix was created.
 
+Positive relationships exist between quantity of EV Registration Counts and all features, although correlation between the pairs are not strong at less than .50
 
+|                            | Reg_Counts |
+| -------------------------- | ---------- |
+| NETWORK_TYPE_Other-Network | 0.275864   |
+| TOTAL_HOUSEHOLDS           | 0.275418   |
+| MEDIAN_INCOME              | 0.275283   |
+| EV_LEVEL_2                 | 0.271770   |
+| EV_TOTAL                   | 0.266710   |
+| NETWORK_TYPE_ChargePoint   | 0.248188   |
+| EV_FAST                    | 0.122623   |
+| NETWORK_TYPE_Non-Networked | 0.040663   |
+| EV_LEVEL_1                 | 0.008519   |
 
-### Training Data Sets:
+### Preproccessing:
+
+##### Core EV Station Location Dataset:
 
 <ul>
-  <li>EV Charging Stations</li>
-  <li>​New York Station EV Registration by Zip Code</li>
-  <li>New York State Zip code List</li>
+  <li>Initial preprocessing was completed on the core dataset with EV Station locations.</li>
+  <li> Columns were dropped that did not provide useful data or missing data for this segment of the project.</li>
+  <li>Columns selected include: Station location data, EV Charger Type, and Charger Network Type</li>
+  <li>Network Type was binned into “ChargePoint”, “Other-Network”, and “Non-Networked.”</li>
+  <li>The team selected States to analyze: MI, MN, NJ, NY, OR, TX, WA, and WI. All other rows were dropped</li>
+  <li>These States were selected based on the vehicle registration datasets. These sets provided registrations based on zip code. Other State sets omitted zip code and recorded registrations based on County</li>
+  <li>NaNs in columns for EV_Level_1, EV_Level_2, and EV_Fast were converted to zero</li>
+  <li>The NaNs represent zero of that type of charger at the location.</li>
+  <li>OneHot Encoding was used to identify and count the EV Charging Network type used at each location</li>
+</ul>
+
+##### Electric Vehicle Registration Datasets:
+
+<ul>
+  <li>Electric Vehicle Registration data was processed to count the values for each zip code in the State’s registration datasets</li>
+  <li>Each State set was merged to generate the core registration dataset.</li>
+</ul>
+
+##### Median Income Dataset:
+
+<ul>
+  <li>Rows were dropped that included unusable data. This includes string datatypes not easily converted to integer datatype.</li>
+</ul>
+
+##### Final ML_Model Dataset
+
+  <ul>
+  <li>All location data was dropped except for Zip Code</li>
+  <li>Station data was merged with Median Income data</li>
+  <li>Station-Median Income data was merged with Registration Data</li>
+  <li>NaNs in column for Registration Count per zip code were converted to zero. This represents zero registrations in a particular zip code.</li>
+  <li>Remaining rows with NaN data were dropped. These NaNs represent no charger data per </li>
+  <li>Target: REG_COUNTS</li>
+  <li>§ Features: EV_LEVEL_1, EV_LEVEL_2, EV_FAST, EV_TOTAL, NETWORK_TYPE_ChargePoint, NETWORK_TYPE_Non-Networked, NETWORK_TYPE_Other-Network, TOTAL_HOUSEHOLDS, MEDIAN_INCOME</li>
+</ul>
+
+### Training & Testing:
+
+<ul>
+  <li>The target dataset was scaled using Sklearn StandardScaler</li>
+  <li>Training and Testing sets were split using Sklearn train_test_split with a test size of 0.33</li>
+  <li>A simple linear regression was used using the target value (EV_Counts) and total EV Chargers per zip code.</li>
+  <li>A multivariable linear regression was used on the complete dataset</li>
+  <li>Training and test sets were split using Sklearn train_test_split with a test size of 0.33.</li>
+</ul>
+
+### Performance:
+
+<ul>
+  <li>Intercept: -1.0227523392233875</li>
+  <li>Coefficients: 8.24406147e-03, -1.40307537e-02, -2.35843837e-03, -5.78669218e-03, 7.77312638e-02, 3.33269198e-02, 1.06158111e-01, 2.72669078e-05, 8.41900424e-06</li>
+  <li>Explained Variance Score: 0.21</li>
+  <li>Max Error: 7.62</li>
+  <li>Mean Absolute Error: 0.41</li>
+  <li>Mean Squared error: 0.70</li>
+  <li>Coefficient of determination: 0.21</li>
 </ul>
 
 
-Our Model will be trained on New York State data to predict where to build a new EV Charging Station.
-From there, Wisconsin EV Registration data will be input into the model to predict zip codes in Wisconsin to install EV charging stations.
+### Fine Tuning:
 
+Future versions of the model may include additional features that have a stronger correlation to the target value, EV Registrations:
 
-### Potential features to be added:
-Based on time and availability we might look into bringing additional data sources in our model (aspirational future model):
 <ul>
-  <li>Median Income by Zip Code</li>
   <li>Average Climate by Zip Code</li>
-  <li>Controlling Political Party by Zip Code</li>
+  <li>Political Climate per Zip Code</li>
   <li>Average Fuel Price by Zip Code</li>
 </ul>
 
