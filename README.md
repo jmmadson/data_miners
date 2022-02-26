@@ -6,7 +6,7 @@
 ### <Strong>Project Team: Data Miners</strong>
 <ul>
     <li><a href=mailto:"fahadarehman@gmail.com">Fahad Rehman</a></li>
-    <li><a href=mailto:"clavallee2@gmail.com">Collin Lavallee</a></li>
+    <li><a href=mailto:"clavallee2@gmail.com">Collin LaVallee</a></li>
     <li><a href=mailto:"john.okimosh@gmail.com">John Okimosh</a></li>
     <li><a href=mailto:"jmmadson@gmail.com">Jenni Madson</a></li>
 </ul>
@@ -167,7 +167,7 @@ Positive relationships exist between quantity of EV Registration Counts and all 
 </ul>
 
 
-### Fine Tuning:
+### Further Refinement:
 
 Future versions of the model may include additional features that have a stronger correlation to the target value, EV Registrations:
 
