@@ -11398,3 +11398,12 @@ footer.footer {
 .myGreen {
   color: #1e564c !important;
 }
+
+.tableauPlaceholder {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.tableauPlaceholder iframe {
+  margin: 0 auto !important;
+}
