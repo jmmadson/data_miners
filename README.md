@@ -6,7 +6,7 @@
 ### <Strong>Project Team: Data Miners</strong>
 <ul>
     <li><a href=mailto:"fahadarehman@gmail.com">Fahad Rehman</a></li>
-    <li><a href=mailto:"clavallee2@gmail.com">Collin Lavallee</a></li>
+    <li><a href=mailto:"clavallee2@gmail.com">Collin LaVallee</a></li>
     <li><a href=mailto:"john.okimosh@gmail.com">John Okimosh</a></li>
     <li><a href=mailto:"jmmadson@gmail.com">Jenni Madson</a></li>
 </ul>
@@ -18,8 +18,9 @@
 
 [Final Project Presentation Slides](https://docs.google.com/presentation/d/14Eq1qvtn5LfKm8ZZqlp7LCTWsukR1nGEvLfNuLsjIQs/edit?usp=sharing)
 
-[Final Project Dashboard Storyboard](https://docs.google.com/presentation/d/1Qia_KQZcDebXRpabq48SAZv1Zmk2K6Zg8QCuIoLd_CE/edit?usp=sharing")
+[Final Project Dashboard Storyboard](https://docs.google.com/presentation/d/1Qia_KQZcDebXRpabq48SAZv1Zmk2K6Zg8QCuIoLd_CE/edit?usp=sharing)
 
+[Final Project Dashboard | GitHub Pages Site](https://jmmadson.github.io/data_miners/)
 </br>
 
 -------------
@@ -166,7 +167,7 @@ Positive relationships exist between quantity of EV Registration Counts and all 
 </ul>
 
 
-### Fine Tuning:
+### Further Refinement:
 
 Future versions of the model may include additional features that have a stronger correlation to the target value, EV Registrations:
 
