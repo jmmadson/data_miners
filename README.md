@@ -93,15 +93,15 @@ Positive relationships exist between quantity of EV Registration Counts and all 
 
 |                            | Reg_Counts |
 | -------------------------- | ---------- |
-| NETWORK_TYPE_Other-Network | 0.275864   |
-| TOTAL_HOUSEHOLDS           | 0.275418   |
-| MEDIAN_INCOME              | 0.275283   |
-| EV_LEVEL_2                 | 0.271770   |
-| EV_TOTAL                   | 0.266710   |
-| NETWORK_TYPE_ChargePoint   | 0.248188   |
-| EV_FAST                    | 0.122623   |
-| NETWORK_TYPE_Non-Networked | 0.040663   |
-| EV_LEVEL_1                 | 0.008519   |
+| MEDIAN_INCOME              | 0.3842     |
+| EV_LEVEL_2                 | 0.3401     |
+| EV_TOTAL                   | 0.3313     |
+| TOTAL_HOUSEHOLDS           | 0.3291     |
+| NETWORK_TYPE_Other-Network | 0.3281     |
+| NETWORK_TYPE_ChargePoint   | 0.2883     |
+| EV_FAST                    | 0.1272     |
+| NETWORK_TYPE_Non-Networked | 0.0376     |
+| EV_LEVEL_1                 | -0.0071    |
 
 ### Preproccessing:
 
@@ -141,8 +141,9 @@ Positive relationships exist between quantity of EV Registration Counts and all 
   <li>NaNs in column for Registration Count per zip code were converted to zero. This represents zero registrations in a particular zip code.</li>
   <li>Remaining rows with NaN data were dropped. These NaNs represent no charger data per </li>
   <li>Target: REG_COUNTS</li>
-  <li>§ Features: EV_LEVEL_1, EV_LEVEL_2, EV_FAST, EV_TOTAL, NETWORK_TYPE_ChargePoint, NETWORK_TYPE_Non-Networked, NETWORK_TYPE_Other-Network, TOTAL_HOUSEHOLDS, MEDIAN_INCOME</li>
+  <li>Features: EV_LEVEL_1, EV_LEVEL_2, EV_FAST, EV_TOTAL, NETWORK_TYPE_ChargePoint, NETWORK_TYPE_Non-Networked, NETWORK_TYPE_Other-Network, TOTAL_HOUSEHOLDS, MEDIAN_INCOME</li>
 </ul>
+
 
 ### Training & Testing:
 
@@ -157,25 +158,38 @@ Positive relationships exist between quantity of EV Registration Counts and all 
 ### Performance:
 
 <ul>
-  <li>Intercept: -1.0227523392233875</li>
-  <li>Coefficients: 8.24406147e-03, -1.40307537e-02, -2.35843837e-03, -5.78669218e-03, 7.77312638e-02, 3.33269198e-02, 1.06158111e-01, 2.72669078e-05, 8.41900424e-06</li>
-  <li>Explained Variance Score: 0.21</li>
-  <li>Max Error: 7.62</li>
+  <li>Intercept: -0.005543530641394393</li>
+  <li>Coefficients: 2.80845787e+11,  1.94237201e+12,  3.72314453e-03, -1.98819102e+12,  3.04794312e-01,  2.12402344e-02, 2.06245422e-01, 2.27378845e-01, 3.47946167e-01</li>
+  <li>Explained Variance Score: 0.32</li>
+  <li>Max Error: 6.74</li>
   <li>Mean Absolute Error: 0.41</li>
-  <li>Mean Squared error: 0.70</li>
-  <li>Coefficient of determination: 0.21</li>
+  <li>Mean Squared error: 0.63</li>
+  <li>Coefficient of determination: 0.32</li>
 </ul>
 
+### User Interactive:
+
+- Added interactivity with the model by providing user input to modify a selected feature
+  - User enters the selected feature to modify
+  - User enters a whole number to modify the feature by
+  - The code iterrates through the rows within the feature to ADD the modifier value to the original feature value
+  - Predictions are generated using the modified dataset
+  - A CSV is exported with predictions and analysis of change between original value and predicted values
+  - The code finishes by displaying a dataframe for inspection
+- Caveat: the current implementation lacks data validation, therefore the code may break with incorrect input variables.
 
 ### Further Refinement:
 
-Future versions of the model may include additional features that have a stronger correlation to the target value, EV Registrations:
+The current version of the model does not make predictions with reliable accuracy. Future versions of the model will need to include improved feature selection that have a stronger correlation to the target value, EV Registrations:
 
 <ul>
   <li>Average Climate by Zip Code</li>
   <li>Political Climate per Zip Code</li>
   <li>Average Fuel Price by Zip Code</li>
+  <li>Total EV Model Count by Zip Code</li>
+  <li>Categories of Average Range by EV Model</li>
 </ul>
+
 
 </br>
 
