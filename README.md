@@ -13,15 +13,11 @@
 </br>
 
 -------------
-## Deliverables:
+## Interactive Dashboard
 -------------
 
-[Final Project Presentation Slides](https://docs.google.com/presentation/d/14Eq1qvtn5LfKm8ZZqlp7LCTWsukR1nGEvLfNuLsjIQs/edit?usp=sharing)
-
-[Final Project Dashboard Storyboard](https://docs.google.com/presentation/d/1Qia_KQZcDebXRpabq48SAZv1Zmk2K6Zg8QCuIoLd_CE/edit?usp=sharing)
-
-[Final Project Dashboard | GitHub Pages Site](https://jmmadson.github.io/data_miners/)
-</br>
+View our Final [Interactive Dashboard](https://jmmadson.github.io/data_miners/) for this project. 
+</br><br>
 
 -------------
 ## Overview:
@@ -254,3 +250,13 @@ We've done some initial planning for the structure of our database.
 - [Entity Relation Diagram](https://github.com/jmmadson/data_miners/blob/main/database_related/ERD.png) 
 - [PGADMIN SQL File](https://github.com/jmmadson/data_miners/blob/main/database_related/pgadmin_import.sql)
 - [Additional Documentation](https://github.com/jmmadson/data_miners/tree/main/database_related)
+
+
+-------------
+## Additional Project Deliverables:
+-------------
+
+[Final Project Presentation Slides](https://docs.google.com/presentation/d/14Eq1qvtn5LfKm8ZZqlp7LCTWsukR1nGEvLfNuLsjIQs/edit?usp=sharing)
+
+[Final Project Dashboard Storyboard](https://docs.google.com/presentation/d/1Qia_KQZcDebXRpabq48SAZv1Zmk2K6Zg8QCuIoLd_CE/edit?usp=sharing)
+</br>
