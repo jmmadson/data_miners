@@ -61,43 +61,33 @@
         <div class="container position-relative">
             <div class="row justify-content-center">
                 <div class="col-xl-10">
+                    
                     <h2>Predicting Electric Vehicle Registrations by ZipCode</h2>
-                    <p>Below is an interactive dashboard with both a chart and a map made from our machine learning model predictions.</p>
-                    <hr>
-                    <p style="text-align: left;">To Interact with these Visualizations:</p>
-                    <ol style="text-align: left;">
-                        <li>Select either "EV Total Comparison" or "EV Total Map" from the "Select Worksheet" dropdown to interact with it.
-                        </li>
-                        <li><strong>For the EV Total Map:</strong> Select and unselect zipcodes from the "Map by Zip" dropdown to show a region you would like to see the predictions for. 
-                        </li>
-                        <li><strong>For the EV Total Comparison:</strong> Select and unselect zipcodes from the "ZIPCODE EV Total" dropdown to see the effect of adding set numbers of electric chargers to a zipcode could have on the EV car registration in that zipcode.
-                        </li>
+                    <h3 style="text-align: left;">The Question</h3>
 
-                    </ol>    
+                    <p style="text-align: left;">With an increased focus on alternative energy and Electric Vehicle (EV) adoption on the rise, the question of infrastructure is at the forefront of the move toward a more sustainable future.  
+                    While there are many factors that go into EV adoption, the accessibility and efficiency of public and private charging stations for plug-in EVs will play a critical role in this process.  But how does an organization determine if they should invest in EV infrastructure?   And if so, then where should they install these costly charging stations?
+                    This is where we believe Machine Learning (ML) can assist.  Because of its ability to be trained on existing data and apply what it learns to novel data, ML can make predictions based on various features.  And as importantly, it can do it in a fraction of the time it would take a human being to do the same work. 
+                    With EV adoption, there is plenty of readily available data, but it is somewhat limited and inconsistent, depending on the progress a state or city has made regarding EV adoption and infrastructure.   Additionally, much of this data and analysis lies behind paywalls, a hindrance to the democratization of data.  However, with a sound ML model, we are able to make predications for new geographic as well as demographic areas.</p>
+
+                    <h3 style="text-align: left;">The Analysis</h3>
+                    <p style="text-align: left;">By using available datasets for EV infrastructure and vehicle registration, as well as other data such as population and median income, we trained a linear regression ML model, produced predictions based on existing data, then created several additional predictions based on hypothetical increases in EV infrastructure.  
+                    While the ML model showed a similar pattern of increases or decreases in EV registration predictions across zip codes, the predictions do not appear to contain the nuanced variations that one may need in order to make EV infrastructure decisions. However, the information elicited from the ML is a great starting point and has provided us with visualizations for a more EV-friendly world (7 states, currently). 
+                    For our initial analysis, we used the ML model to make predictions for adding 2, 4, 5, 8, and 12 additional charging stations per zip code.  These predicted numbers can be seen in the dashboard below.  The ML model predicted a sharp increase in registrations for all variations, but with diminishing returns after adding 8 total charging stations.  This became more apparent when we created predictions for 24,36, and 48 additional charging stations.  With most zip codes currently containing fewer than 10 total charging stations, we thought it best to focus on the initial analysis for the visualization piece.</p>
+
+                    <h3 style="text-align: left;">The Dashboard</h3>
+                    <p style="text-align: left;">Using the embedded Tableau Public workbook below, the user is able analyze current and ML predicted EV registration data, filtered on geography.  However, due to a deficiency in monetary resources and limited calendric units, the current iteration of this interactive dashboard contains static data and limited features.  And yet, Tableau Desktop does have the capability to make a connection to Python and other languages/programs used for ML, which allows for real-time, dynamic predications and visualizations.  This could be an opportunity for future exploration and analysis. 
+                        Feel free to explore the data for the 7 states and the myriad zip codes within to see how the ML predicted EV registration counts.  The predictions can be accessed by hovering over a particular zip code. 
+                        Additionally, there is data for the number of households and the median income within a zip code, both important factors in this discussion.  And for increased comprehensibility, one can use a slide filter to view zip codes within a certain percent change from the current number of total EV stations to an increase in 2 total EV stations.  This allows the user to home in on those zip codes that could give the most return on EV infrastructure investment.</p>
+                
                     <br>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-12">
-                    <div class='tableauPlaceholder' id='viz1646007632013' style='position: relative'><object
-                            class='tableauViz' style='display:none;'>
-                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                            <param name='embed_code_version' value='3' />
-                            <param name='site_root' value='' />
-                            <param name='name' value='EVRegistrationPredictions1&#47;EVPredictionsDashboard' />
-                            <param name='tabs' value='no' />
-                            <param name='toolbar' value='yes' />
-                            <param name='animate_transition' value='yes' />
-                            <param name='display_static_image' value='yes' />
-                            <param name='display_spinner' value='yes' />
-                            <param name='display_overlay' value='yes' />
-                            <param name='display_count' value='yes' />
-                            <param name='language' value='en-US' />
-                        </object></div>
-                    <script
-                        type='text/javascript'>                    var divElement = document.getElementById('viz1646007632013'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '877px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='tableauPlaceholder' id='viz1646184699070' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='EVRegistrationPredictions2&#47;EVTotalComparisonMap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1646184699070');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
-                </div>
+             </div>
     </section>
 
 
@@ -237,7 +227,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                        <img class="img-fluid rounded-circle mb-5" src="assets/img/placeholder.png" alt="..." />
+                        <img class="img-fluid rounded-circle mb-5" src="assets/img/collin.jpg" alt="..." />
                         <h5>Collin LaVallee</h5>
                         <p class="font-weight-light mb-0"><a href="www.linkedin.com/in/collin-lavallee-964089217"
                                 target="_blank"><img src="assets/linkedin.png"></a>
