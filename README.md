@@ -61,9 +61,6 @@ The following are the technologies we plan to utilize for the project at this st
 |  Google Collab | Writing & executing our machine learning code|
 |  Quick Database Diagrams | ERD creation |
 
-
-While the technologies we use may change as we work through this project, we will start with some of those we are most familiar with.   We will then explore them more in depth to determine if they are right for the project as well as to increase the effectiveness of our analysis and visualization. 
-
  </br>
 
 -------------
@@ -105,7 +102,7 @@ Positive relationships exist between quantity of EV Registration Counts and all 
 
 <ul>
   <li>Initial preprocessing was completed on the core dataset with EV Station locations.</li>
-  <li> Columns were dropped that did not provide useful data or missing data for this segment of the project.</li>
+  <li>Columns were dropped that did not provide useful data or missing data for this segment of the project.</li>
   <li>Columns selected include: Station location data, EV Charger Type, and Charger Network Type</li>
   <li>Network Type was binned into “ChargePoint”, “Other-Network”, and “Non-Networked.”</li>
   <li>The team selected States to analyze: MI, MN, NJ, NY, OR, TX, WA, and WI. All other rows were dropped</li>
