@@ -35,9 +35,9 @@ We're going to use our data sets and machine learning models to confirm or rejec
 -------------
 Through our modeling and analysis we are planning to solve the following questions:
 <ul>
-    <li>How many charging stations in a location help drive sales and what locations could add more to increase adoption?</li>
-    <li>What other factors affect the sales of electric vehicles?</li>
-  	<li>Can we predict the next location (zip code) to install a EV charger?</li>
+    <li>Is there a correlation between charging stations in a location and vehicle sales/registrations? </li>
+    <li>What locations (zip codes) could add more charging stations to increase adoption?</li>
+    <li>What potential other factors affect the sales of electric vehicles? </li>
 </ul>
 
  </br>
